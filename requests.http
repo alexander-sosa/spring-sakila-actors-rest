@@ -1,0 +1,29 @@
+### Actors List
+GET http://localhost:8080/act
+Accept: application/json
+
+### Specific Actor
+GET http://localhost:8080/act/5
+Accept: application/json
+
+### Create Actor
+POST http://localhost:8080/act
+Content-Type: application/json
+
+{
+    "name": "Johnny",
+    "lastname": "Depp"
+}
+
+### Update Actor
+PUT http://localhost:8080/act/204
+Content-Type: application/json
+
+{
+    "name": "Johnny",
+    "lastname": "Lastname 204"
+}
+
+### Delete Actor
+DELETE http://localhost:8080/act/201
+Accept: application/json
